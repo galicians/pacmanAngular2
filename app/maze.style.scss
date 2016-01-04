@@ -1,0 +1,124 @@
+$green: #11c910;
+$red: #FF0000; // Red
+$orange: #FFBF00; // Orange
+$yellow: #FFFF00; // Yellow
+$green: #7FFF00; // Green
+$color5: #007FFF; // Light Blue
+$color6: #00FFFF; // Cyan
+$blue: #0000FF; // Blue
+$color8: #7F00FF; // Purple
+$color9: #FF00FF; // Magenta
+$black: #000; // Black
+$white: #fff; // White
+
+h1 {
+	color: $blue;
+}
+.title {
+	font-size: 5em;
+}
+.maze {
+	margin-left: 30px;
+}
+.cell {
+	width: 80px;
+	height: 80px;
+	padding: 0px;
+	margin-bottom: -4px;
+	background-color: $black;
+	display: inline-block;
+}
+.cell-container {
+	display: inline-block;
+	margin:0px;
+}
+.pacman {
+	margin-left:10px;
+	margin-top: 12px;
+	width: 59px;
+	height: 70px;
+	background-image: url("images/pacman.png")
+}
+.point {
+	background-color: yellow;
+	margin-left:35px;
+	margin-top: 35px;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+}
+.row {
+	margin: 0px;
+	display: inline;
+}
+.wall-top {
+	height: 50px;
+	border-top-color: $blue;
+	border-top-style: solid;
+	border-bottom-color: $blue;
+	border-bottom-style: solid;
+	border-top-width: 7px;
+	border-bottom-width: 7px;
+}
+.wall-left {
+	width: 50px;
+	border-left-color: $blue;
+	border-left-style: solid;
+	border-right-color: $blue;
+	border-right-style: solid;
+	padding-right:7px;
+
+}
+.wall-right {
+	width: 50px;
+	border-right-color: $blue;
+	border-right-style: solid;
+	border-left-color: $blue;
+	border-left-style: solid;
+	margin-left: -7px;
+}
+.wall-bottom {
+	height: 50px;
+	border-top-color: $blue;
+	border-top-style: solid;
+	border-bottom-color: $blue;
+	border-bottom-style: solid;
+	border-bottom-width: 7px;
+}
+.wall-corner-top-right {
+	// border-top-left-radius: 20px;
+	border-left-style: none;
+	border-bottom-style: none;
+	padding-top:7px;
+	padding-right:5px;
+	margin-left:-1px;
+}
+.wall-corner-top-left {
+	border-right-style: none;
+	border-bottom-style: none;
+	padding-top:7px;
+	padding-right:7px;
+}
+.wall-corner-bottom-right {
+	border-top-style: none;
+	border-left-style: none;
+	padding-top:7px;
+	padding-right:7px;
+	margin-left: -2px;
+}
+.wall-corner-bottom-left {
+	border-top-style: none;
+	border-right-style: none;
+	padding-top:7px;
+	padding-right:7px
+}
+
+
+
+
+
+
+
+
+
+

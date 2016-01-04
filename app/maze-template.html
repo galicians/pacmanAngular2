@@ -1,0 +1,28 @@
+<h1 class="title">{{title}}</h1>
+
+    <div class="maze" (keyup)="move()">
+    	<div class="row" *ngFor="#row of grid">
+			<!-- <div class="cell-container" > -->
+				<div *ngFor="#cell of row"
+					[class.wall]="cell.content === 'wall'" 
+					[class.cell]="true"
+					[class.wall-top]="cell.posX === 0"
+					[class.wall-bottom]="cell.posX === 29"
+					[class.wall-right]="cell.posY === 29"
+					[class.wall-left]="cell.posY === 0"
+					[class.wall-corner-top-right]="cell.posX == 0 && cell.posY == 29"
+					[class.wall-corner-top-left]="cell.posX == 0 && cell.posY == 0"
+					[class.wall-corner-bottom-right]="cell.posX == 29 && cell.posY == 29"
+					[class.wall-corner-bottom-left]="cell.posX == 29 && cell.posY == 0">
+					<div 
+						[class.point]="cell.state == 'empty'"
+						[class.pacman]="cell.content.type == 'pacman'">
+					</div>
+			<!-- 	{{cell.content.type}} -->
+				<!-- x:{{cell.posX}} y:{{cell.posY}}  -->
+				</div>
+				<br>
+		<!-- 	</div> -->
+    	</div>
+    </div>
+
